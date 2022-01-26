@@ -1,5 +1,5 @@
 import React from "react";
-import presale from "../assets/presale.png";
+import presale from "../assets/presale2.svg";
 import Grid from "@mui/material/Grid";
 import Hidden from "@mui/material/Hidden";
 function Presale() {
@@ -12,7 +12,8 @@ function Presale() {
             backgroundSize: "100%",
             height: "100vh",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "bottom",
+            backgroundPosition: "center",
+            backgroundColor:'black'
           }}
         />
       </Hidden>
