@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Hidden from "@mui/material/Hidden";
 function Game() {
   return (
-    <Grid>
+    <>
       <Hidden smDown>
         <Grid
           style={{
@@ -50,7 +50,7 @@ function Game() {
           </Typography>
         </Grid>
       </Hidden>
-    </Grid>
+    </>
   );
 }
 

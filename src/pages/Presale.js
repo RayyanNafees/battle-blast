@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Hidden from "@mui/material/Hidden";
 function Presale() {
   return (
-    <Grid>
+    <>
       <Hidden smDown>
         <Grid
           style={{
@@ -27,7 +27,7 @@ function Presale() {
           }}
         />
       </Hidden>
-    </Grid>
+    </>
   );
 }
 

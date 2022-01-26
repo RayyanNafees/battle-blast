@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import home from "../assets/home.svg";
+import homeMobile from "../assets/home.mobile.svg";
 import logo from "../assets/logo.svg";
 import Typography from "@mui/material/Typography";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -11,17 +12,11 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Hidden from "@mui/material/Hidden";
 import MenuIcon from "@mui/icons-material/Menu";
+import "./Home.css";
 function Home() {
   return (
-    <Grid>
-      <Grid
-        style={{
-          backgroundImage: `url(${home})`,
-          backgroundStyle: "cover",
-          height: "100vh",
-          width: "100vw",
-        }}
-      >
+    <>
+      <Grid className="back">
         <Hidden smDown>
           <Grid
             container
@@ -92,33 +87,29 @@ function Home() {
           </Grid>
         </Hidden>
         <Hidden smDown>
-          <Grid container justifyContent="center" alignItems="center">
-            <Grid alignItems="center" justifyContent="center"
+          <Grid container justifyContent="center" alignItems="center" item>
+            <img src={logo} style={{ height: "40vh", width: "40vw" }} />
+            <Typography
+              variant="h3"
+              color="initial"
+              color="white"
+              align="center"
+              fontWeight={700}
             >
-              <img src={logo} style={{ height: "40vh", width: "40vw" }} />
-              <Typography
-                variant="h3"
-                color="initial"
-                color="white"
-                align="center"
-                fontWeight={700}
-              >
-                Battle Blast
-              </Typography>
-            </Grid>
+              Battle Blast
+            </Typography>
           </Grid>
         </Hidden>
         <Hidden mdUp>
           <Grid container justifyContent="center" alignItems="center">
             <Grid alignItems="center" justifyContent="center" mt={40}>
-            <img src={logo} style={{ height: "20vh", width: "100%" }} />
+              <img src={logo} style={{ height: "20vh", width: "100%" }} />
               <Typography
                 variant="h3"
                 color="initial"
                 color="white"
                 align="center"
                 fontWeight={700}
-
               >
                 Battle Blast
               </Typography>
@@ -126,7 +117,7 @@ function Home() {
           </Grid>
         </Hidden>
       </Grid>
-    </Grid>
+    </>
   );
 }
 

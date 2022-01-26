@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Hidden from "@mui/material/Hidden";
 function NFT() {
   return (
-    <Grid>
+    <>
       <Hidden smDown>
         <Grid
           style={{
@@ -51,7 +51,7 @@ function NFT() {
           </Typography>
         </Grid>
       </Hidden>
-    </Grid>
+    </>
   );
 }
 

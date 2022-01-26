@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Hidden from "@mui/material/Hidden";
 function Game() {
   return (
-    <Grid>
+    <>
       <Hidden smDown>
         <Grid
           style={{
@@ -35,19 +35,19 @@ function Game() {
             backgroundRepeat: "no-repeat",
             backgroundPositionY: "bottom",
           }}
+          container
+          fullWidth
           justifyContent="center"
-          alignItems="center"
-          pl={10}
-          pt={2}
+          alignItems="flex-start"
         >
           <img
-            src={require("../assets/thestage.png")}
+            src={require("../assets/thestage.svg")}
             width="70%"
-            height="60%"
+            height="70%"
           />
         </Grid>
       </Hidden>
-    </Grid>
+    </>
   );
 }
 
