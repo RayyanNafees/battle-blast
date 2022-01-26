@@ -93,10 +93,11 @@ function Home() {
         </Hidden>
         <Hidden smDown>
           <Grid container justifyContent="center" alignItems="center">
-            <Grid alignItems="center" justifyContent="center">
+            <Grid alignItems="center" justifyContent="center"
+            >
               <img src={logo} style={{ height: "40vh", width: "40vw" }} />
               <Typography
-                variant="h2"
+                variant="h3"
                 color="initial"
                 color="white"
                 align="center"

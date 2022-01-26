@@ -10,7 +10,7 @@ import IconButton from "@mui/material/IconButton";
 
 function Game() {
   return (
-    <Grid>
+    <Grid mt={-2}>
       <Grid
         style={{
           backgroundColor: `#404D93`,
