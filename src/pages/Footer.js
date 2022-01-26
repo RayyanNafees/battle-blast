@@ -64,13 +64,14 @@ function Game() {
             </IconButton>
           </Grid>
         </Grid>
-        <Grid item>
+        <Grid item mt={2}>
           <Typography
             variant="caption"
             color="initial"
             color="white"
             align="center"
             fontWeight={700}
+           
           >
             copyright ©2022 BattelBast
           </Typography>

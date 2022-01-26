@@ -7,11 +7,11 @@ function Game() {
     <Grid>
       <Grid
         style={{
-            background: `center no-repeat url(${green})`,
-            backgroundSize: "contain",
-            height: "100vh",
-            width: "100vw",
-            objectFit: "contain",
+          background: `url(${green})`,
+          backgroundSize: "100%",
+          height: "100vh",
+          backgroundRepeat: "no-repeat",
+          backgroundPositionY: "bottom",
         }}
       >
         <Typography
