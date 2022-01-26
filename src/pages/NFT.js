@@ -34,14 +34,18 @@ function NFT() {
           style={{
             background: `url(${nftMobile})`,
             backgroundSize: "100%",
-            height: "30vh",
+            height: "38vh",
             backgroundRepeat: "no-repeat",
             backgroundPositionY: "bottom",
           }}
-          pt={20}
+          alignItems="flex-end"
+          container
+          item
+          justifyContent="center"
+          pb={2}
         >
           <Typography
-            variant="h4"
+            variant="h5"
             color="initial"
             color="white"
             align="center"

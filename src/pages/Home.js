@@ -81,35 +81,41 @@ function Home() {
         </Hidden>
         <Hidden mdUp>
           <Grid container fullWidth justifyContent={"flex-end"} px={2} py={2}>
-            <IconButton color="warning">
+            <IconButton
+              color="warning"
+              sx={{ backgroundColor: "#EB6D45", color: "rgba(0,0,0,1)" }}
+            >
               <MenuIcon fontSize="large" />
             </IconButton>
           </Grid>
         </Hidden>
         <Hidden smDown>
-          <Grid container justifyContent="center" alignItems="center" item>
-            <img src={logo} style={{ height: "40vh", width: "40vw" }} />
-            <Typography
-              variant="h3"
-              color="initial"
-              color="white"
-              align="center"
-              fontWeight={700}
-            >
-              Battle Blast
-            </Typography>
-          </Grid>
-        </Hidden>
-        <Hidden mdUp>
           <Grid container justifyContent="center" alignItems="center">
-            <Grid alignItems="center" justifyContent="center" mt={40}>
-              <img src={logo} style={{ height: "20vh", width: "100%" }} />
+            <Grid item>
+              <img src={logo} style={{ height: "40vh", width: "40vw" }} />
               <Typography
                 variant="h3"
                 color="initial"
                 color="white"
                 align="center"
                 fontWeight={700}
+              >
+                Battle Blast
+              </Typography>
+            </Grid>
+          </Grid>
+        </Hidden>
+        <Hidden mdUp>
+          <Grid container justifyContent="center" alignItems="center">
+            <Grid alignItems="center" justifyContent="center" mt={25}>
+              <img src={logo} style={{ height: "20vh", width: "100%" }} />
+              <Typography
+                variant="h4"
+                color="initial"
+                color="white"
+                align="center"
+                fontWeight={700}
+                mt={2}
               >
                 Battle Blast
               </Typography>

@@ -4,6 +4,7 @@ import deepblue from "../assets/deepblue.svg";
 import dpMobile from "../assets/deepblue.mobile.png";
 import Typography from "@mui/material/Typography";
 import Hidden from "@mui/material/Hidden";
+import pie from "../assets/pie_text.svg";
 function Game() {
   return (
     <>
@@ -32,22 +33,40 @@ function Game() {
         <Grid
           style={{
             background: `url(${dpMobile})`,
-            backgroundSize: "100%",
-            height: "30vh",
+            backgroundSize: "150%",
+            height: "50vh",
             backgroundRepeat: "no-repeat",
             backgroundPositionY: "top",
           }}
+          justifyContent="center"
+          alignItems="flex-start"
+          container
+          pt={1}
         >
-          <Typography
-            variant="h4"
-            color="initial"
-            color="warning.main"
-            align="center"
-            fontWeight={700}
-            mt={1}
+          <Grid
+            container
+            direction="column"
+            item
+            alignItems="center"
+            justifyContent="center"
+            spacing={6}
           >
-            Tokonomics
-          </Typography>
+            <Grid item mt={2}>
+              <Typography
+                variant="h5"
+                color="initial"
+                color="warning.main"
+                align="center"
+                fontWeight={700}
+                mt={1}
+              >
+                Tokonomics
+              </Typography>
+            </Grid>
+            <Grid item container alignItems="center" justifyContent="center">
+              <img src={pie} width="100%" />
+            </Grid>
+          </Grid>
         </Grid>
       </Hidden>
     </>

@@ -37,10 +37,14 @@ function Game() {
             backgroundRepeat: "no-repeat",
             backgroundPositionY: "bottom",
           }}
-          pt={15}
+          alignItems="flex-end"
+          container
+          item
+          justifyContent="center"
+          pb={2}
         >
           <Typography
-            variant="h4"
+            variant="h5"
             color="initial"
             color="white"
             align="center"

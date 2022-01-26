@@ -21,9 +21,10 @@ function Presale() {
           style={{
             background: `url(${presale})`,
             backgroundSize: "100%",
-            height: "26vh",
+            height: "35vh",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "bottom",
+            backgroundPositionY: "center",
+            backgroundColor: "black",
           }}
         />
       </Hidden>

@@ -5,7 +5,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Button from "@mui/material/Button";
+import Hidden from "@mui/material/Hidden";
 import IconButton from "@mui/material/IconButton";
 
 function Game() {
@@ -21,57 +21,91 @@ function Game() {
         alignItems="center"
         container
         direction="column"
-        py={5}
+        py={4}
       >
         <Grid item>
-          <Typography
-            variant="h4"
-            color="initial"
-            color="white"
-            align="center"
-            fontWeight={700}
-          >
-            Battle Blast
-          </Typography>
+          <Hidden smDown>
+            <Typography
+              variant="h4"
+              color="initial"
+              color="white"
+              align="center"
+              fontWeight={700}
+              gutterBottom
+            >
+              Battle Blast
+            </Typography>
+          </Hidden>
+          <Hidden mdUp>
+            <Typography
+              variant="h5"
+              color="initial"
+              color="white"
+              align="center"
+              fontWeight={700}
+            >
+              Battle Blast
+            </Typography>
+          </Hidden>
         </Grid>
         <Grid
           item
           container
-          spacing={3}
-          sm={6}
-          my={0.1}
+          spacing={2}
+          md={6}
+          sm={2}
+          my={0.01}
           justifyContent="center"
           alignItems="center"
         >
           <Grid item>
             <IconButton style={{ color: "white" }}>
-              <InstagramIcon fontSize="large" />
+              <Hidden smDown>
+                <InstagramIcon fontSize="large" />
+              </Hidden>
+              <Hidden mdUp>
+                <InstagramIcon />
+              </Hidden>
             </IconButton>
           </Grid>
           <Grid item>
             <IconButton style={{ color: "white" }}>
-              <TwitterIcon fontSize="large" />
+              <Hidden smDown>
+                <TwitterIcon fontSize="large" />
+              </Hidden>
+              <Hidden mdUp>
+                <TwitterIcon />
+              </Hidden>
             </IconButton>
           </Grid>
           <Grid item>
             <IconButton style={{ color: "white" }}>
-              <YouTubeIcon fontSize="large" />
+              <Hidden smDown>
+                <YouTubeIcon fontSize="large" />
+              </Hidden>
+              <Hidden mdUp>
+                <YouTubeIcon />
+              </Hidden>
             </IconButton>
           </Grid>
           <Grid item>
             <IconButton style={{ color: "white" }}>
-              <TelegramIcon fontSize="large" />
+              <Hidden smDown>
+                <TelegramIcon fontSize="large" />
+              </Hidden>
+              <Hidden mdUp>
+                <TelegramIcon />
+              </Hidden>
             </IconButton>
           </Grid>
         </Grid>
-        <Grid item mt={2}>
+        <Grid item>
           <Typography
             variant="caption"
             color="initial"
             color="white"
             align="center"
             fontWeight={700}
-           
           >
             copyright ©2022 BattelBast
           </Typography>

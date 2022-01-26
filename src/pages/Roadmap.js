@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import green from "../assets/green.svg";
 import Typography from "@mui/material/Typography";
 import Hidden from "@mui/material/Hidden";
+import road from "../assets/thestage.svg";
 function Game() {
   return (
     <>
@@ -30,21 +31,17 @@ function Game() {
         <Grid
           style={{
             background: `url(${green})`,
-            backgroundSize: "100%",
-            height: "22.5vh",
+            backgroundSize: "200%",
+            height: "32.5vh",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "bottom",
+            backgroundPositionY: "center",
           }}
           container
           fullWidth
           justifyContent="center"
-          alignItems="flex-start"
+          alignItems="center"
         >
-          <img
-            src={require("../assets/thestage.svg")}
-            width="70%"
-            height="70%"
-          />
+          <img src={road} width="90%" height="90%" />
         </Grid>
       </Hidden>
     </>
