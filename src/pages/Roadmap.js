@@ -15,16 +15,15 @@ function Game() {
             backgroundRepeat: "no-repeat",
             backgroundPositionY: "bottom",
           }}
+          container
+          fullWidth
+          justifyContent="center"
+          alignItems="flex-start"
         >
-          <Typography
-            variant="h2"
-            color="initial"
-            color="white"
-            align="center"
-            fontWeight={700}
-          >
-            Roadmap
-          </Typography>
+          <img
+            src={require("../assets/road.png")}
+            style={{ width: "70%", height: "70%" }}
+          />
         </Grid>
       </Hidden>
       <Hidden mdUp>
