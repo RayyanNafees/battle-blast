@@ -17,16 +17,24 @@ function Game() {
             backgroundRepeat: "no-repeat",
             backgroundPositionY: "bottom",
           }}
+          container
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
         >
           <Typography
             variant="h2"
             color="initial"
-            color="white"
+            color="warning.main"
             align="center"
             fontWeight={700}
+            gutterBottom
           >
             Tokonomics
           </Typography>
+          <Grid item container alignItems="center" justifyContent="center" >
+            <img src={pie} width="50%" />
+          </Grid>
         </Grid>
       </Hidden>
       <Hidden mdUp>

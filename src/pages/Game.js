@@ -24,7 +24,7 @@ function Game() {
             align="center"
             fontWeight={700}
           >
-            Coming Soon
+            Game Under Construction
           </Typography>
         </Grid>
       </Hidden>
@@ -32,10 +32,11 @@ function Game() {
         <Grid
           style={{
             background: `url(${game})`,
-            backgroundSize: "100%",
-            height: "25vh",
+            backgroundSize: "150%",
+            height: "38vh",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "bottom",
+            // backgroundPositionY: "bottom",
+            backgroundPosition:'center'
           }}
           alignItems="flex-end"
           container
@@ -50,7 +51,7 @@ function Game() {
             align="center"
             fontWeight={700}
           >
-            Coming Soon
+            Game Under Construction
           </Typography>
         </Grid>
       </Hidden>

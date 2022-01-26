@@ -32,16 +32,16 @@ function Game() {
           style={{
             background: `url(${green})`,
             backgroundSize: "200%",
-            height: "32.5vh",
+            height: "35vh",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "center",
+            backgroundPosition: "center",
           }}
           container
           fullWidth
           justifyContent="center"
           alignItems="center"
         >
-          <img src={road} width="90%" height="90%" />
+          <img src={road} width="100%" />
         </Grid>
       </Hidden>
     </>

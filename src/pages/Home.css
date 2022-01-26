@@ -3,15 +3,15 @@
   background-size: 100%;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position-y: bottom;
+  background-position: center;
 }
 
 @media screen and (max-width: 600px) {
   .back {
     background: url(../assets/home.mobile.svg);
     background-size: 100%;
-    height: 82vh;
+    height: 78vh;
     background-repeat: no-repeat;
-    background-position-y: bottom;
+    background-position: center;
   }
 }

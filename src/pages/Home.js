@@ -12,8 +12,13 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Hidden from "@mui/material/Hidden";
 import MenuIcon from "@mui/icons-material/Menu";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 import "./Home.css";
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 function Home() {
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => setOpen(false);
   return (
     <>
       <Grid className="back">
@@ -84,6 +89,7 @@ function Home() {
             <IconButton
               color="warning"
               sx={{ backgroundColor: "#EB6D45", color: "rgba(0,0,0,1)" }}
+              onClick={() => setOpen(true)}
             >
               <MenuIcon fontSize="large" />
             </IconButton>
@@ -107,8 +113,8 @@ function Home() {
         </Hidden>
         <Hidden mdUp>
           <Grid container justifyContent="center" alignItems="center">
-            <Grid alignItems="center" justifyContent="center" mt={25}>
-              <img src={logo} style={{ height: "20vh", width: "100%" }} />
+            <Grid alignItems="center" justifyContent="center" mt={15}>
+              <img src={logo} style={{ height: "30vh", width: "100%" }} />
               <Typography
                 variant="h4"
                 color="initial"
@@ -123,6 +129,30 @@ function Home() {
           </Grid>
         </Hidden>
       </Grid>
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert
+          onClose={handleClose}
+          severity="warning"
+          sx={{ width: "100%" }}
+          icon={<EmojiPeopleIcon />}
+        >
+          Welcome to Battle Blast!
+          <br />
+          We are launching NFT based open world game soon...
+          <br />
+          Game demo is ready!
+          <br />
+          Let's get connected with our social media so that you won't miss our
+          token presale, token public launch, NFT launch, game launch and many
+          more!
+          <br />
+        </Alert>
+      </Snackbar>
     </>
   );
 }

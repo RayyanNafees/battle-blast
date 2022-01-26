@@ -1,4 +1,6 @@
 * {
   scrollbar-width: thin;
   overflow-x: hidden;
+  border-color:black;
+  /* background-color: black; */
 }
