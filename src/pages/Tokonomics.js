@@ -7,10 +7,11 @@ function Game() {
     <Grid>
       <Grid
         style={{
-          backgroundImage: `url(${deepblue})`,
-          backgroundStyle: "cover",
-          height: "100vh",
-          width: "100vw",
+            background: `center no-repeat url(${deepblue})`,
+            backgroundSize: "contain",
+            height: "100vh",
+            width: "100vw",
+            objectFit: "contain",
         }}
       >
         <Typography

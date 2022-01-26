@@ -7,11 +7,14 @@ function NFT() {
     <Grid>
       <Grid
         style={{
-          backgroundImage: `url(${nft})`,
-        //   backgroundStyle: "cover",
+          background: `center no-repeat url(${nft})`,
+          backgroundSize: "contain",
           height: "100vh",
           width: "100vw",
+          backgroundStyle:'cover'
+        //   objectFit: "contain",
         }}
+        pt={70}
       >
         <Typography
           variant="h2"
@@ -19,6 +22,7 @@ function NFT() {
           color="white"
           align="center"
           fontWeight={700}
+          
         >
           Coming Soon
         </Typography>
