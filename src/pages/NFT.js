@@ -12,7 +12,7 @@ function NFT() {
           style={{
             background: `url(${nft})`,
             backgroundSize: "100%",
-            height: "130vh",
+            height: "125vh",
             backgroundRepeat: "no-repeat",
             backgroundPositionY: "top",
           }}

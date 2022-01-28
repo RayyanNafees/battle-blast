@@ -69,7 +69,7 @@ function Presale() {
             <img src={dragon} width="40%"/>
           </Grid>
           <Grid item>
-            <img src={front} width="100%" />
+            <img src={front} style={{width:'100vw'}} />
           </Grid>
           <Grid
             item

@@ -7,6 +7,7 @@ import Tokonomics from "./Tokonomics";
 import Footer from "./Footer";
 import Presale from "./Presale";
 import QNA from "./QNA";
+import Dev from "./Dev";
 function MainScreen() {
   return (
     <>
@@ -17,6 +18,7 @@ function MainScreen() {
       <Game />
       <Roadmap />
       <Tokonomics />
+      <Dev />
       <Footer />
     </>
   );

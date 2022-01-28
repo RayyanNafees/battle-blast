@@ -13,7 +13,7 @@ const TextBox = ({ title, value }) => {
     <Grid item xs mx={5}>
       <Box
         sx={{
-          px: 10,
+          textAlign: "center",
           py: 4,
           backgroundColor: hover ? "#4d88ac" : "#39627B",
           border: "2px solid #FFFFFF",
