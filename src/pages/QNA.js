@@ -15,7 +15,7 @@ const data = Object.entries({
 function QNA() {
   return (
     <>
-      <Hidden smDown>
+      {/* <Hidden smDown> */}
         <Grid
           style={{
             background: `url(${qna})`,
@@ -55,7 +55,7 @@ function QNA() {
             </Grid>
           ))}
         </Grid>
-      </Hidden>
+      {/* </Hidden>
       <Hidden mdUp>
         <Grid
           style={{
@@ -82,7 +82,7 @@ function QNA() {
             Game Under Construction
           </Typography>
         </Grid>
-      </Hidden>
+      </Hidden> */}
     </>
   );
 }

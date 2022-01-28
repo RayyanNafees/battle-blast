@@ -30,7 +30,7 @@ const classes = {
 function Presale() {
   return (
     <>
-      <Hidden smDown>
+      {/* <Hidden smDown> */}
         <Grid
           style={{
             background: `url(${presale})`,
@@ -90,7 +90,7 @@ function Presale() {
             </Typography>
           </Grid>
         </Grid>
-      </Hidden>
+      {/* </Hidden>
       <Hidden mdUp>
         <Grid
           style={{
@@ -102,7 +102,7 @@ function Presale() {
             backgroundColor: "black",
           }}
         />
-      </Hidden>
+      </Hidden> */}
     </>
   );
 }

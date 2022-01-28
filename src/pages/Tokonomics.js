@@ -38,7 +38,7 @@ const data = Object.entries({
 function Tokenomics() {
   return (
     <>
-      <Hidden smDown>
+      {/* <Hidden smDown> */}
         <Grid
           style={{
             background: `url(${deepblue})`,
@@ -66,7 +66,7 @@ function Tokenomics() {
             ))}
           </Grid>
         </Grid>
-      </Hidden>
+      {/* </Hidden>
       <Hidden mdUp>
         <Grid
           style={{
@@ -106,7 +106,7 @@ function Tokenomics() {
             </Grid>
           </Grid>
         </Grid>
-      </Hidden>
+      </Hidden> */}
     </>
   );
 }

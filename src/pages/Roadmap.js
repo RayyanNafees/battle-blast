@@ -7,7 +7,7 @@ import road from "../assets/thestage.svg";
 function Game() {
   return (
     <>
-      <Hidden smDown>
+      {/* <Hidden smDown> */}
         <Grid
           style={{
             background: `url(${green})`,
@@ -27,7 +27,7 @@ function Game() {
             style={{ width: "70%", height: "70%" }}
           />
         </Grid>
-      </Hidden>
+      {/* </Hidden>
       <Hidden mdUp>
         <Grid
           style={{
@@ -44,7 +44,7 @@ function Game() {
         >
           <img src={road} width="100%" />
         </Grid>
-      </Hidden>
+      </Hidden> */}
     </>
   );
 }

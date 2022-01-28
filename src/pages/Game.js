@@ -6,7 +6,7 @@ import Hidden from "@mui/material/Hidden";
 function Game() {
   return (
     <>
-      <Hidden smDown>
+      {/* <Hidden smDown> */}
         <Grid
           style={{
             background: `url(${game})`,
@@ -47,8 +47,8 @@ function Game() {
             </Typography>
           </Grid>
         </Grid>
-      </Hidden>
-      <Hidden mdUp>
+      {/* </Hidden> */}
+      {/* <Hidden mdUp>
         <Grid
           style={{
             background: `url(${game})`,
@@ -74,7 +74,7 @@ function Game() {
             Game Under Construction
           </Typography>
         </Grid>
-      </Hidden>
+      </Hidden> */}
     </>
   );
 }

@@ -7,7 +7,7 @@ import Hidden from "@mui/material/Hidden";
 function NFT() {
   return (
     <>
-      <Hidden smDown>
+      {/* <Hidden smDown> */}
         <Grid
           style={{
             background: `url(${nft})`,
@@ -53,7 +53,7 @@ function NFT() {
             </Typography>
           </Grid>
         </Grid>
-      </Hidden>
+      {/* </Hidden>
       <Hidden mdUp>
         <Grid
           style={{
@@ -79,7 +79,7 @@ function NFT() {
             Coming Soon
           </Typography>
         </Grid>
-      </Hidden>
+      </Hidden> */}
     </>
   );
 }

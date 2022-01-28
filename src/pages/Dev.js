@@ -8,7 +8,7 @@ import Hidden from "@mui/material/Hidden";
 function Dev() {
   return (
     <>
-      <Hidden smDown>
+      {/* <Hidden smDown> */}
         <Grid
           style={{
             background: `black`,
@@ -81,7 +81,7 @@ function Dev() {
             </Grid>
           </Grid>
         </Grid>
-      </Hidden>
+      {/* </Hidden>
       <Hidden mdUp>
         <Grid
           style={{
@@ -108,7 +108,7 @@ function Dev() {
             Game Under Construction
           </Typography>
         </Grid>
-      </Hidden>
+      </Hidden> */}
     </>
   );
 }
