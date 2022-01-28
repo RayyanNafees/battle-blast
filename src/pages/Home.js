@@ -75,7 +75,7 @@ function Home() {
               <Grid item>
                 <Button
                   variant="contained"
-                  bgColor="orange"
+                  color="primary"
                   style={{ textTransform: "none" }}
                 >
                   Connect Wallet
@@ -105,6 +105,7 @@ function Home() {
                 color="white"
                 align="center"
                 fontWeight={700}
+                p={6}
               >
                 Battle Blast
               </Typography>

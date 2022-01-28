@@ -12,9 +12,10 @@ function Game() {
           style={{
             background: `url(${green})`,
             backgroundSize: "100%",
-            height: "100vh",
+            height: "110vh",
             backgroundRepeat: "no-repeat",
             backgroundPositionY: "bottom",
+            backgroundColor:'black'
           }}
           container
           fullWidth
