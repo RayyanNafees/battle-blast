@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import game from "../assets/game.svg";
+import game from "../assets/catch.svg";
 import Typography from "@mui/material/Typography";
 import Hidden from "@mui/material/Hidden";
 function Game() {
@@ -13,19 +13,39 @@ function Game() {
             backgroundSize: "100%",
             height: "100vh",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "bottom",
+            backgroundPositionY: "center",
           }}
-          pt={70}
+          container
+          direction="column"
+          spacing={10}
+          justifyContent="center"
+          alignItems="center"
         >
-          <Typography
-            variant="h2"
-            color="initial"
-            color="white"
-            align="center"
-            fontWeight={700}
-          >
-            Game Under Construction
-          </Typography>
+          <Grid item >
+            <Typography
+              variant="h2"
+              color="initial"
+              color="white"
+              align="center"
+              fontWeight={700}
+            >
+              Game <br /> Under Development
+            </Typography>
+          </Grid>
+          <Grid item width="70%" xs={5}>
+            <Typography
+              variant="h5"
+              color="initial"
+              color="white"
+              align="center"
+              fontWeight={700}
+            >
+              Main product and utility of Battle Blast is P2P game where player
+              can earn money by playing game by fighiting with their monsters in
+              battlefield arena. Game will get regular updates and features to
+              improve the gaming experience for everyone
+            </Typography>
+          </Grid>
         </Grid>
       </Hidden>
       <Hidden mdUp>
@@ -36,7 +56,7 @@ function Game() {
             height: "38vh",
             backgroundRepeat: "no-repeat",
             // backgroundPositionY: "bottom",
-            backgroundPosition:'center'
+            backgroundPosition: "center",
           }}
           alignItems="flex-end"
           container

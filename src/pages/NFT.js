@@ -12,21 +12,46 @@ function NFT() {
           style={{
             background: `url(${nft})`,
             backgroundSize: "100%",
-            height: "100vh",
+            height: "130vh",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "bottom",
+            backgroundPositionY: "top",
           }}
-          pt={70}
+          container
+          direction="column"
+          justifyContent="space-evenly"
+          alignItems="center"
         >
-          <Typography
-            variant="h2"
-            color="initial"
-            color="white"
-            align="center"
-            fontWeight={700}
-          >
-            Coming Soon
-          </Typography>
+          <Grid item container justifyContent="flex-start">
+            <Typography
+              variant="h3"
+              color="initial"
+              color="white"
+              align="center"
+              fontWeight={700}
+              fontFamily="Rammetto One"
+              ml={5}
+            >
+              Battle Blast
+              <br /> NFT Marketplace
+              <br /> Coming Soon...
+            </Typography>
+          </Grid>
+          <Grid item container justifyContent="center">
+            <Typography
+              variant="h5"
+              color="initial"
+              color="white"
+              align="center"
+              fontWeight={700}
+              width="70%"
+            >
+              Explore the world of NFTs with Battle Blast Marketplace
+              <br />
+              <br />A peer to peer marketplace where you'll can buy sell and
+              trade NFT and other items for development of your monsters. You
+              can discover rare collectibles in marketplace too!
+            </Typography>
+          </Grid>
         </Grid>
       </Hidden>
       <Hidden mdUp>
