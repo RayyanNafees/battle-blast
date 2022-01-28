@@ -6,12 +6,13 @@ import Roadmap from "./Roadmap";
 import Tokonomics from "./Tokonomics";
 import Footer from "./Footer";
 import Presale from "./Presale";
-
+import QNA from "./QNA";
 function MainScreen() {
   return (
     <>
       <Home />
       <Presale />
+      <QNA />
       <NFT />
       <Game />
       <Roadmap />
