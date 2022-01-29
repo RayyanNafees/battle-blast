@@ -32,6 +32,7 @@ function Game() {
           background: "black",
           borderRadius: "0px 0px 850px 850px / 0px 0px 200px 200px",
         }}
+        mb={10}
       />
       <Grid
         item
