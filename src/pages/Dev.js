@@ -8,7 +8,7 @@ import Hidden from "@mui/material/Hidden";
 function Dev() {
   return (
     <>
-      {/* <Hidden smDown> */}
+      <Hidden smDown>
         <Grid
           style={{
             background: `black`,
@@ -75,40 +75,90 @@ function Dev() {
               container
               fullWidth
               justifyContent="center"
-              alignItems="center"mt={5}
+              alignItems="center"
+              mt={5}
             >
               <img src={pics} width="60%" />
             </Grid>
           </Grid>
         </Grid>
-      {/* </Hidden>
+      </Hidden>
       <Hidden mdUp>
         <Grid
           style={{
-            background: `url(${unity})`,
-            backgroundSize: "150%",
-            height: "38vh",
-            backgroundRepeat: "no-repeat",
-            // backgroundPositionY: "bottom",
-            backgroundPosition: "center",
+            background: `black`,
           }}
-          alignItems="flex-end"
           container
-          item
+          direction="column"
           justifyContent="center"
-          pb={2}
+          alignItems="center"
+          pt={10}
         >
-          <Typography
-            variant="h5"
-            color="initial"
-            color="white"
-            align="center"
-            fontWeight={700}
+          <Grid
+            item
+            container
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            pb={5}
           >
-            Game Under Construction
-          </Typography>
+            <Grid item>
+              <Typography
+                variant="h6"
+                color="initial"
+                color="white"
+                align="center"
+                fontWeight={700}
+                gutterBottom
+              >
+                Dev-Tool
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              container
+              fullWidth
+              justifyContent="center"
+              alignItems="center"
+              mt={5}
+              mb={10}
+            >
+              <img src={unity} width="50%" />
+            </Grid>
+          </Grid>
+
+          <Grid
+            item
+            container
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Grid item>
+              <Typography
+                variant="body2"
+                color="initial"
+                color="white"
+                align="center"
+                fontWeight={100}
+                gutterBottom
+              >
+                PROMOTION AND LISTING
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              container
+              fullWidth
+              justifyContent="center"
+              alignItems="center"
+              mt={2}
+            >
+              <img src={pics} width="80%" />
+            </Grid>
+          </Grid>
         </Grid>
-      </Hidden> */}
+      </Hidden>
     </>
   );
 }

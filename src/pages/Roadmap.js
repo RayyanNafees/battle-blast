@@ -67,8 +67,8 @@ function Roadmap() {
         <Grid
           style={{
             background: `url(${green}) no-repeat`,
-            backgroundSize: "100%",
-            height: "50vh",
+            // backgroundSize: "100%",
+            height: "40vh",
             // backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             // backgroundColor: "black",
