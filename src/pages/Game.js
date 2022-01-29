@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import game from "../assets/catch.svg";
+import game from "../assets/unity_engine.svg";
 import Typography from "@mui/material/Typography";
 import Hidden from "@mui/material/Hidden";
 function Game() {
@@ -29,7 +29,7 @@ function Game() {
               align="center"
               fontWeight={700}
             >
-              Game <br /> Under Development
+              Game Under Development
             </Typography>
           </Grid>
           <Grid item width="70%" xs={5}>

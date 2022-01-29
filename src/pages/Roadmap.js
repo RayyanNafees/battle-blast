@@ -14,7 +14,7 @@ function Game() {
             backgroundSize: "100%",
             height: "110vh",
             backgroundRepeat: "no-repeat",
-            backgroundPositionY: "bottom",
+            backgroundPositionY: "center",
             backgroundColor:'black'
           }}
           container

@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Presale from "./Presale";
 import QNA from "./QNA";
 import Dev from "./Dev";
+import Terminology from "./Terminology";
 function MainScreen() {
   return (
     <>
@@ -16,6 +17,7 @@ function MainScreen() {
       <QNA />
       <NFT />
       <Game />
+      <Terminology />
       <Roadmap />
       <Tokonomics />
       <Dev />
