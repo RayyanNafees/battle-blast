@@ -32,14 +32,34 @@ function Roadmap() {
             Roadmap
           </Typography>
         </Grid>
-        <Grid item sx={{ overflowX: "scroll" }} ml={5} container ref={ref}>
-          <IconButton onClick={() => ref.current.scrollBy(-100, 0)}>
-            <ChevronLeft fontSize="large"/>
-          </IconButton>
-          <img src={road} width="200%" />
-          <IconButton onClick={() => ref.current.scrollBy(100, 0)}>
-            <ChevronRight fontSize="large"/>
-          </IconButton>
+        <Grid item container direction="column" px={10}>
+          <Grid
+            item
+            sx={{ overflowX: "scroll" }}
+            width="200%"
+            container
+            ref={ref}
+          >
+            <img src={road} width="100%" />
+          </Grid>
+          <Grid item container fullWidth justifyContent="space-between">
+            <Grid item>
+              <IconButton
+                onClick={() => ref.current.scrollBy(-100, 0)}
+                sx={{ color: "white" }}
+              >
+                <ChevronLeft fontSize="large" />
+              </IconButton>
+            </Grid>
+            <Grid item>
+              <IconButton
+                onClick={() => ref.current.scrollBy(100, 0)}
+                sx={{ color: "white" }}
+              >
+                <ChevronRight fontSize="large" />
+              </IconButton>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
       {/* </Hidden>
