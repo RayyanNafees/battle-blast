@@ -6,7 +6,7 @@ import Hidden from "@mui/material/Hidden";
 function Game() {
   return (
     <>
-      {/* <Hidden smDown> */}
+      <Hidden smDown>
         <Grid
           style={{
             background: `url(${game})`,
@@ -21,7 +21,7 @@ function Game() {
           justifyContent="center"
           alignItems="center"
         >
-          <Grid item >
+          <Grid item>
             <Typography
               variant="h2"
               color="initial"
@@ -47,34 +47,59 @@ function Game() {
             </Typography>
           </Grid>
         </Grid>
-      {/* </Hidden> */}
-      {/* <Hidden mdUp>
+      </Hidden>
+      <Hidden mdUp>
         <Grid
           style={{
-            background: `url(${game})`,
+            background: `url(${game}) no-repeat`,
             backgroundSize: "150%",
-            height: "38vh",
+            height: "70vh",
             backgroundRepeat: "no-repeat",
-            // backgroundPositionY: "bottom",
             backgroundPosition: "center",
           }}
-          alignItems="flex-end"
           container
-          item
+          // direction="column"
+          // spacing={10}
           justifyContent="center"
-          pb={2}
+          alignItems="center"
+          fullWidth
         >
-          <Typography
-            variant="h5"
-            color="initial"
-            color="white"
-            align="center"
-            fontWeight={700}
+          <Grid
+            item
+            container
+            direction="column"
+            spacing={5}
+            alignItems="center"
           >
-            Game Under Construction
-          </Typography>
+            <Grid item>
+              <Typography
+                variant="h4"
+                color="initial"
+                color="white"
+                align="center"
+                fontWeight={700}
+                gutterBottom
+              >
+                Game Under Development
+              </Typography>
+            </Grid>
+            <Grid item width="70%" xs={5}>
+              <Typography
+                variant="subtitle2"
+                color="initial"
+                color="white"
+                align="center"
+                // fontWeight={700}
+              >
+                Main product and utility of Battle Blast is P2P game where
+                player can earn money by playing game by fighiting with their
+                monsters in battlefield arena. Game will get regular updates and
+                features to improve the gaming experience for everyone
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
-      </Hidden> */}
+      </Hidden>
     </>
   );
 }
