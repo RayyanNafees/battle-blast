@@ -9,6 +9,7 @@ import Presale from "./Presale";
 import QNA from "./QNA";
 import Dev from "./Dev";
 import Terminology from "./Terminology";
+import Pokemon from "./Pokemon";
 function MainScreen() {
   return (
     <>
@@ -20,6 +21,7 @@ function MainScreen() {
       <Terminology />
       <Roadmap />
       <Tokonomics />
+      <Pokemon />
       <Dev />
       <Footer />
     </>
