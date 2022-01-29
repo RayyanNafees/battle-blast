@@ -53,7 +53,7 @@ function Game() {
           style={{
             background: `url(${game}) no-repeat`,
             backgroundSize: "150%",
-            height: "70vh",
+            height: "35vh",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
