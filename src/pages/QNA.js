@@ -15,7 +15,7 @@ const data = Object.entries({
 function QNA() {
   return (
     <>
-      {/* <Hidden smDown> */}
+      <Hidden smDown>
         <Grid
           style={{
             background: `url(${qna})`,
@@ -55,34 +55,48 @@ function QNA() {
             </Grid>
           ))}
         </Grid>
-      {/* </Hidden>
+      </Hidden>
       <Hidden mdUp>
         <Grid
           style={{
             background: `url(${qna})`,
-            backgroundSize: "150%",
-            height: "38vh",
+            backgroundSize: "300%",
+            height: "70vh",
             backgroundRepeat: "no-repeat",
-            // backgroundPositionY: "bottom",
             backgroundPosition: "center",
           }}
-          alignItems="flex-end"
+          // pt={70}
           container
-          item
-          justifyContent="center"
-          pb={2}
+          direction="column"
+          py={10}
+          justifyContent="space-evenly"
+          alignItems="center"
         >
-          <Typography
-            variant="h5"
-            color="initial"
-            color="white"
-            align="center"
-            fontWeight={700}
-          >
-            Game Under Construction
-          </Typography>
+          {data.map(([ques, ans], n) => (
+            <Grid item width="70%" key={n}>
+              <Typography
+                variant="body2"
+                color="initial"
+                color="white"
+                align="center"
+                fontWeight={700}
+                gutterBottom
+              >
+                {n + 1}. {ques}
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                color="initial"
+                color="white"
+                align="center"
+                // fontWeight={700}
+              >
+                {ans}
+              </Typography>
+            </Grid>
+          ))}
         </Grid>
-      </Hidden> */}
+      </Hidden>
     </>
   );
 }

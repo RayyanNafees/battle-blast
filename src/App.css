@@ -1,8 +1,11 @@
-
 * {
   scrollbar-width: thin;
   overflow-x: hidden;
   border-color: black;
   font-family: "Poppins";
+  /* background-color: black; */
+}
+
+body {
   /* background-color: black; */
 }
