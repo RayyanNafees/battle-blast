@@ -5,110 +5,116 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Hidden from "@mui/material/Hidden";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import IconButton from "@mui/material/IconButton";
+import Button from "@mui/material/Button";
+import { Divider } from "@mui/material";
 
 function Game() {
   return (
-    <Grid mt={-2}>
+    <Grid
+      style={{
+        backgroundColor: `#fff`,
+        backgroundStyle: "cover",
+        width: "100vw",
+        height: "60vh",
+      }}
+      justifyContent="flex-start"
+      alignItems="center"
+      container
+      direction="column"
+    >
       <Grid
+        item
         style={{
-          backgroundColor: `#404D93`,
-          backgroundStyle: "cover",
+          height: "30vh",
           width: "100vw",
+          background: "black",
+          borderRadius: "0px 0px 850px 850px / 0px 0px 200px 200px",
         }}
-        justifyContent="center"
-        alignItems="center"
+      />
+      <Grid
+        item
         container
-        direction="column"
-        py={4}
+        justifyContent="space-between"
+        alignItems="center"
+        fullWidth
+        direction="row"
+        width="90%"
       >
-        <Grid item>
-          <Hidden smDown>
-            <Typography
-              variant="h4"
-              color="initial"
-              color="white"
-              align="center"
-              fontWeight={700}
-              gutterBottom
-            >
-              Battle Blast
+        <Grid item container sm={4} justifyContent="space-between">
+          <Grid item>
+            <Typography variant="subtitle2" color="text.primary">
+              Home
             </Typography>
-          </Hidden>
-          <Hidden mdUp>
-            <Typography
-              variant="h5"
-              color="initial"
-              color="white"
-              align="center"
-              fontWeight={700}
-            >
-              Battle Blast
+          </Grid>
+          <Grid item>
+            <Typography variant="subtitle2" color="text.primary">
+              Whitepaper
             </Typography>
-          </Hidden>
+          </Grid>
+          <Grid item>
+            <Typography variant="subtitle2" color="text.primary">
+              NFT
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="subtitle2" color="text.primary">
+              Marketplace
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid
-          item
-          container
-          spacing={2}
-          md={6}
-          sm={2}
-          my={0.01}
-          justifyContent="center"
-          alignItems="center"
-        >
+        <Grid item container sm={3} justifyContent="space-between">
           <Grid item>
-            <IconButton style={{ color: "white" }}>
-              <Hidden smDown>
-                <InstagramIcon fontSize="large" />
-              </Hidden>
-              <Hidden mdUp>
-                <InstagramIcon />
-              </Hidden>
+            <IconButton style={{ color: "black" }}>
+              <FacebookIcon fontSize="large" />
             </IconButton>
           </Grid>
           <Grid item>
-            <IconButton style={{ color: "white" }}>
-              <Hidden smDown>
-                <TwitterIcon fontSize="large" />
-              </Hidden>
-              <Hidden mdUp>
-                <TwitterIcon />
-              </Hidden>
+            <IconButton style={{ color: "black" }}>
+              <InstagramIcon fontSize="large" />
             </IconButton>
           </Grid>
           <Grid item>
-            <IconButton style={{ color: "white" }}>
-              <Hidden smDown>
-                <YouTubeIcon fontSize="large" />
-              </Hidden>
-              <Hidden mdUp>
-                <YouTubeIcon />
-              </Hidden>
+            <IconButton style={{ color: "black" }}>
+              <TwitterIcon fontSize="large" />
             </IconButton>
           </Grid>
           <Grid item>
-            <IconButton style={{ color: "white" }}>
-              <Hidden smDown>
-                <TelegramIcon fontSize="large" />
-              </Hidden>
-              <Hidden mdUp>
-                <TelegramIcon />
-              </Hidden>
+            <IconButton style={{ color: "black" }}>
+              <YouTubeIcon fontSize="large" />
+            </IconButton>
+          </Grid>
+          <Grid item>
+            <IconButton style={{ color: "black" }}>
+              <TelegramIcon fontSize="large" />
             </IconButton>
           </Grid>
         </Grid>
-        <Grid item>
-          <Typography
-            variant="caption"
-            color="initial"
-            color="white"
-            align="center"
-            fontWeight={700}
-          >
-            copyright ©2022 BattelBast
+      </Grid>
+      <Grid
+        container
+        bgcolor="rgba(0,0,0,0.3)"
+        sx={{ height: 1.5, width: "90%" }}
+        my={7}
+      />
+      <Grid container justifyContent="space-between" sx={{ width: "90%" }}>
+        <Grid item xs>
+          <Typography variant="caption" color="text.primary">
+            © 2022 Battle Blast. All rights reserved.
           </Typography>
+        </Grid>
+        <Grid item container xs={2} justifyContent="space-between">
+          <Grid item>
+            <Typography variant="caption" color="text.primary">
+              Terms of Service
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="caption" color="text.primary">
+              Privacy Policy
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
