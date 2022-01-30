@@ -47,10 +47,37 @@ const mobClasses = {
   },
 };
 
+var countDownDate = new Date("Feb 11, 2022 00:00:00").getTime();
+
 function Presale() {
-  const [date, setDate] = React.useState(new Date());
+  const [date, setDate] = React.useState(null);
   React.useEffect(() => {
-    const intv = setInterval(() => setDate(new Date()), 1000);
+    const intv = setInterval(() => {
+      // Update the count down every 1 second
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      setDate(`${days}d ${hours}h ${minutes}m ${seconds}s `);
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(intv);
+        setDate("Live!");
+      }
+    }, 1000);
     return () => {
       clearInterval(intv);
     };
@@ -82,7 +109,7 @@ function Presale() {
             </Typography>
 
             <Typography style={classes.time} variant="h4">
-              {new Date().toLocaleTimeString().toLowerCase()}
+              {date}
             </Typography>
           </Grid>{" "}
           <Grid
@@ -156,10 +183,7 @@ function Presale() {
               </Grid>
               <Grid item>
                 <Typography style={mobClasses.time} variant="h6">
-                  {/* {date
-                    .toLocaleTimeString()
-                    .toLowerCase()
-                    .replace(/(am|pm)/g, "")} */}
+                  {date}
                 </Typography>
               </Grid>
             </Grid>
