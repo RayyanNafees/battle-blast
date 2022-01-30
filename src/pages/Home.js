@@ -17,6 +17,8 @@ import Alert from "@mui/material/Alert";
 import "./Home.css";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import { useNavigate } from "react-router-dom";
+import { currentUser, login, logOut } from "../connect";
+
 const links = {
   twitter: "https://twitter.com/battle_blast",
   instagram: "https://www.instagram.com/battle_blast_official/",
@@ -31,6 +33,8 @@ function Home() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
   const nav = useNavigate();
+
+  const [loggedIn, setLoggedIn] = React.useState(Boolean(currentUser));
   return (
     <>
       <Grid className="back">
@@ -101,8 +105,12 @@ function Home() {
                   variant="contained"
                   color="primary"
                   style={{ textTransform: "none" }}
+                  onClick={() => {
+                    if (!loggedIn) login().then(setLoggedIn);
+                    else logOut().then(setLoggedIn);
+                  }}
                 >
-                  Connect Wallet
+                  {!loggedIn ? "Connect Wallet" : "Log Out"}
                 </Button>
               </Grid>
             </Grid>

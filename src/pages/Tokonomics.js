@@ -50,11 +50,7 @@ const TextBoxMobile = ({ title, value, focussed, setFocussed }) => {
     </Grid>
   );
 };
-`Supply
-Charity tax
-Marketing tax
-Liquidity tax
-`;
+
 const data = Object.entries({
   supply: "10,000,000",
   "charity tax": "2%",

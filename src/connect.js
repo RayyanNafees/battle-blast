@@ -23,13 +23,19 @@ async function login() {
       return user.get("ethAddress");
     } catch (error) {
       console.log(error);
+      return false;
     }
   }
-  return false;
+  return true;
 }
 
 async function logOut() {
-  await Moralis.User.logOut();
+  try {
+    await Moralis.User.logOut();
+    return false;
+  } catch (e) {
+    return true;
+  }
 }
 
-export { login, logOut };
+export { login, logOut, currentUser, Moralis };
