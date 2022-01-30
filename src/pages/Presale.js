@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Hidden from "@mui/material/Hidden";
 import front from "../assets/presale-front.svg";
 import Typography from "@mui/material/Typography";
-import dragon from "../assets/dragon.svg";
+import dragon from "../assets/dragon.png";
 // import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const classes = {
