@@ -156,10 +156,10 @@ function Presale() {
               </Grid>
               <Grid item>
                 <Typography style={mobClasses.time} variant="h6">
-                  {date
+                  {/* {date
                     .toLocaleTimeString()
                     .toLowerCase()
-                    .replace(/(am|pm)/g, "")}
+                    .replace(/(am|pm)/g, "")} */}
                 </Typography>
               </Grid>
             </Grid>

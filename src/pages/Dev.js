@@ -67,7 +67,7 @@ function Dev() {
                 align="center"
                 fontWeight={700}
               >
-                PROMOTION AND LISTING
+                PROMOTION AND LISTINGS
               </Typography>
             </Grid>
             <Grid
@@ -143,7 +143,7 @@ function Dev() {
                 fontWeight={100}
                 gutterBottom
               >
-                PROMOTION AND LISTING
+                PROMOTION AND LISTINGS
               </Typography>
             </Grid>
             <Grid

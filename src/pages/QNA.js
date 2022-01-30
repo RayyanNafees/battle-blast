@@ -61,7 +61,7 @@ function QNA() {
           style={{
             background: `url(${qna})`,
             backgroundSize: "300%",
-            height: "70vh",
+            height: "100vh",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
