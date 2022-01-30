@@ -16,9 +16,21 @@ import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import "./Home.css";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import { useNavigate } from "react-router-dom";
+const links = {
+  twitter: "https://twitter.com/battle_blast",
+  instagram: "https://www.instagram.com/battle_blast_official/",
+  facebook: "https://www.facebook.com/people/Battle-Blas/100077477974704/",
+  youtube: "https://www.youtube.com/channel/UCgkP5YTEFN5bqUAfO_mzlxA",
+  telegram: "https://t.me/battleblast",
+};
+
+const redir = (url) => () => (window.location.href = url);
+
 function Home() {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
+  const nav = useNavigate();
   return (
     <>
       <Grid className="back">
@@ -36,32 +48,44 @@ function Home() {
                 <img src={logo} style={{ width: 50, height: 50 }} />
               </Grid>
               <Grid item>
-                <IconButton style={{ color: "white" }}>
+                <IconButton
+                  style={{ color: "white" }}
+                  onClick={redir(links.instagram)}
+                >
                   <InstagramIcon fontSize="large" />
                 </IconButton>
               </Grid>
               <Grid item>
-                <IconButton style={{ color: "white" }}>
+                <IconButton
+                  style={{ color: "white" }}
+                  onClick={redir(links.twitter)}
+                >
                   <TwitterIcon fontSize="large" />
                 </IconButton>
               </Grid>
               <Grid item>
-                <IconButton style={{ color: "white" }}>
+                <IconButton
+                  style={{ color: "white" }}
+                  onClick={redir(links.youtube)}
+                >
                   <YouTubeIcon fontSize="large" />
                 </IconButton>
               </Grid>
               <Grid item>
-                <IconButton style={{ color: "white" }}>
+                <IconButton
+                  style={{ color: "white" }}
+                  onClick={redir(links.telegram)}
+                >
                   <TelegramIcon fontSize="large" />
                 </IconButton>
               </Grid>
             </Grid>
             <Grid item container sm={6} spacing={3} my={0.1}>
               <Grid item>
-                <Button>Home</Button>
+                <Button onClick={redir("/")}>Home</Button>
               </Grid>
               <Grid item>
-                <Button>Whitepaper</Button>
+                <Button onClick={() => nav("/whitepaper")}>Whitepaper</Button>
               </Grid>
               <Grid item>
                 <Button>NFT</Button>

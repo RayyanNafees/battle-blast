@@ -9,8 +9,20 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import { Divider } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+
+const links = {
+  twitter: "https://twitter.com/battle_blast",
+  instagram: "https://www.instagram.com/battle_blast_official/",
+  facebook: "https://www.facebook.com/people/Battle-Blas/100077477974704/",
+  youtube: "https://www.youtube.com/channel/UCgkP5YTEFN5bqUAfO_mzlxA",
+  telegram: "https://t.me/battleblast",
+};
+
+const redir = (url) => () => (window.location.href = url);
 
 function Game() {
+  const nav = useNavigate();
   return (
     <Grid
       style={{
@@ -45,12 +57,16 @@ function Game() {
       >
         <Grid item container sm={4} justifyContent="space-between">
           <Grid item>
-            <Typography variant="subtitle2" color="text.primary">
+            <Typography
+              variant="subtitle2"
+              color="text.primary"
+              onClick={() => nav("/")}
+            >
               Home
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="subtitle2" color="text.primary">
+            <Typography variant="subtitle2" color="text.primary" onClick={()=> nav('/whitepaper')}>
               Whitepaper
             </Typography>
           </Grid>
@@ -67,27 +83,42 @@ function Game() {
         </Grid>
         <Grid item container sm={3} justifyContent="space-between">
           <Grid item>
-            <IconButton style={{ color: "black" }}>
+            <IconButton
+              style={{ color: "black" }}
+              onClick={redir(links.facebook)}
+            >
               <FacebookIcon fontSize="large" />
             </IconButton>
           </Grid>
           <Grid item>
-            <IconButton style={{ color: "black" }}>
+            <IconButton
+              style={{ color: "black" }}
+              onClick={redir(links.instagram)}
+            >
               <InstagramIcon fontSize="large" />
             </IconButton>
           </Grid>
           <Grid item>
-            <IconButton style={{ color: "black" }}>
+            <IconButton
+              style={{ color: "black" }}
+              onClick={redir(links.twitter)}
+            >
               <TwitterIcon fontSize="large" />
             </IconButton>
           </Grid>
           <Grid item>
-            <IconButton style={{ color: "black" }}>
+            <IconButton
+              style={{ color: "black" }}
+              onClick={redir(links.youtube)}
+            >
               <YouTubeIcon fontSize="large" />
             </IconButton>
           </Grid>
           <Grid item>
-            <IconButton style={{ color: "black" }}>
+            <IconButton
+              style={{ color: "black" }}
+              onClick={redir(links.telegram)}
+            >
               <TelegramIcon fontSize="large" />
             </IconButton>
           </Grid>

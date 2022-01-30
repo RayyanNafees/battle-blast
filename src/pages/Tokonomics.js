@@ -50,12 +50,16 @@ const TextBoxMobile = ({ title, value, focussed, setFocussed }) => {
     </Grid>
   );
 };
-
+`Supply
+Charity tax
+Marketing tax
+Liquidity tax
+`;
 const data = Object.entries({
   supply: "10,000,000",
-  charity: "2%",
-  marketing: "4%",
-  liq: "4%",
+  "charity tax": "2%",
+  "marketing tax": "4%",
+  "Liquidity tax": "4%",
 });
 
 function Tokenomics() {

@@ -37,7 +37,7 @@ function Game() {
             <Typography variant="h6" align="left">
               There will be around 36 monsters <br />
               3 starter pack <br />
-              2 booster packs with 3 blockmons each
+              2 booster packs with 3 monsters each
               <br />
               Many more to be announced!
             </Typography>
