@@ -10,7 +10,7 @@ import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import { Divider } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-
+import pdf from '../assets/whitepaper.pdf'
 const links = {
   twitter: "https://twitter.com/battle_blast",
   instagram: "https://www.instagram.com/battle_blast_official/",
@@ -66,7 +66,7 @@ function Game() {
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="subtitle2" color="text.primary" onClick={()=> nav('/whitepaper')}>
+            <Typography variant="subtitle2" color="text.primary" onClick={()=> window.open(pdf)}>
               Whitepaper
             </Typography>
           </Grid>

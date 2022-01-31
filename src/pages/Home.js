@@ -18,7 +18,7 @@ import "./Home.css";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import { useNavigate } from "react-router-dom";
 import { currentUser, login, logOut } from "../connect";
-
+import pdf from '../assets/whitepaper.pdf'
 const links = {
   twitter: "https://twitter.com/battle_blast",
   instagram: "https://www.instagram.com/battle_blast_official/",
@@ -89,7 +89,7 @@ function Home() {
                 <Button onClick={redir("/")}>Home</Button>
               </Grid>
               <Grid item>
-                <Button onClick={() => nav("/whitepaper")}>Whitepaper</Button>
+                <Button onClick={() => window.open(pdf)}>Whitepaper</Button>
               </Grid>
               <Grid item>
                 <Button>NFT</Button>
