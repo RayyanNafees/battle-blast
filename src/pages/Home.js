@@ -24,7 +24,7 @@ const links = {
   instagram: "https://www.instagram.com/battle_blast_official/",
   facebook: "https://www.facebook.com/people/Battle-Blas/100077477974704/",
   youtube: "https://www.youtube.com/channel/UCgkP5YTEFN5bqUAfO_mzlxA",
-  telegram: "https://t.me/battleblast",
+  telegram: "https://t.me/battleblasttoken",
 };
 
 const redir = (url) => () => (window.location.href = url);
